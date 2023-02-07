@@ -1,5 +1,4 @@
-import { remote } from 'electron';
-const app = remote.app;
+const { app } = require('electron');
 
 app.on('gpu-info-update', () => {
     console.log('GPU Information has been Updated');
