@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <h3>GPU Information in Electron</h3>
+    <button id="metrics">
+        Fetch App Metrics
+    </button>
+    <br><br>
+    <button id="basic">
+        Get Basic GPU Information
+    </button>
+    <br><br>
+    <button id="complete">
+        Get Complete GPU Information
+    </button>
+    <br><br>
+    <button id="features">
+        Get GPU Feature Status
+    </button>
+    <script>
+        document.write(process.versions.node)
+    </script>, Chrome
+    <script>
+        document.write(process.versions.chrome)
+    </script>, and Electron
+    <script>
+        document.write(process.versions.electron)
+    </script>.
+
+    <!-- Adding Individual Renderer Process JS File -->
+    <script src="index.js"></script>
+</body>
+
+</html>
